@@ -1,1 +1,4 @@
-include ':outlook-services'
+def apiLibDir = file('../../orc-for-android/src/orc-android')
+def rootProjectDescriptor = settings.rootProject
+settings.createProjectDescriptor(rootProjectDescriptor, 'orc-android', apiLibDir)
+include  'outlook-services', ':orc-android'
