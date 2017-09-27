@@ -25,16 +25,20 @@ public class Event extends Item {
     public Event(){
         setODataType("#Microsoft.OutlookServices.Event");
     }
-            
+
+    private String reason;
+
+    private Object deleted;
+
     private String OriginalStartTimeZone;
-     
+
     /**
     * Gets the Original Start Time Zone.
     *
     * @return the String
     */
     public String getOriginalStartTimeZone() {
-        return this.OriginalStartTimeZone; 
+        return this.OriginalStartTimeZone;
     }
 
     /**
@@ -42,21 +46,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setOriginalStartTimeZone(String value) { 
-        this.OriginalStartTimeZone = value; 
+    public void setOriginalStartTimeZone(String value) {
+        this.OriginalStartTimeZone = value;
         valueChanged("OriginalStartTimeZone", value);
 
     }
-            
+
     private String OriginalEndTimeZone;
-     
+
     /**
     * Gets the Original End Time Zone.
     *
     * @return the String
     */
     public String getOriginalEndTimeZone() {
-        return this.OriginalEndTimeZone; 
+        return this.OriginalEndTimeZone;
     }
 
     /**
@@ -64,21 +68,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setOriginalEndTimeZone(String value) { 
-        this.OriginalEndTimeZone = value; 
+    public void setOriginalEndTimeZone(String value) {
+        this.OriginalEndTimeZone = value;
         valueChanged("OriginalEndTimeZone", value);
 
     }
-            
+
     private ResponseStatus ResponseStatus;
-     
+
     /**
     * Gets the Response Status.
     *
     * @return the ResponseStatus
     */
     public ResponseStatus getResponseStatus() {
-        return this.ResponseStatus; 
+        return this.ResponseStatus;
     }
 
     /**
@@ -86,21 +90,21 @@ public class Event extends Item {
     *
     * @param value the ResponseStatus
     */
-    public void setResponseStatus(ResponseStatus value) { 
-        this.ResponseStatus = value; 
+    public void setResponseStatus(ResponseStatus value) {
+        this.ResponseStatus = value;
         valueChanged("ResponseStatus", value);
 
     }
-            
+
     private String iCalUId;
-     
+
     /**
     * Gets the i Cal UId.
     *
     * @return the String
     */
     public String getICalUId() {
-        return this.iCalUId; 
+        return this.iCalUId;
     }
 
     /**
@@ -108,21 +112,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setICalUId(String value) { 
-        this.iCalUId = value; 
+    public void setICalUId(String value) {
+        this.iCalUId = value;
         valueChanged("iCalUId", value);
 
     }
-            
+
     private Integer ReminderMinutesBeforeStart;
-     
+
     /**
     * Gets the Reminder Minutes Before Start.
     *
     * @return the Integer
     */
     public Integer getReminderMinutesBeforeStart() {
-        return this.ReminderMinutesBeforeStart; 
+        return this.ReminderMinutesBeforeStart;
     }
 
     /**
@@ -130,21 +134,21 @@ public class Event extends Item {
     *
     * @param value the Integer
     */
-    public void setReminderMinutesBeforeStart(Integer value) { 
-        this.ReminderMinutesBeforeStart = value; 
+    public void setReminderMinutesBeforeStart(Integer value) {
+        this.ReminderMinutesBeforeStart = value;
         valueChanged("ReminderMinutesBeforeStart", value);
 
     }
-            
+
     private Boolean IsReminderOn;
-     
+
     /**
     * Gets the Is Reminder On.
     *
     * @return the Boolean
     */
     public Boolean getIsReminderOn() {
-        return this.IsReminderOn; 
+        return this.IsReminderOn;
     }
 
     /**
@@ -152,21 +156,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setIsReminderOn(Boolean value) { 
-        this.IsReminderOn = value; 
+    public void setIsReminderOn(Boolean value) {
+        this.IsReminderOn = value;
         valueChanged("IsReminderOn", value);
 
     }
-            
+
     private Boolean HasAttachments;
-     
+
     /**
     * Gets the Has Attachments.
     *
     * @return the Boolean
     */
     public Boolean getHasAttachments() {
-        return this.HasAttachments; 
+        return this.HasAttachments;
     }
 
     /**
@@ -174,21 +178,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setHasAttachments(Boolean value) { 
-        this.HasAttachments = value; 
+    public void setHasAttachments(Boolean value) {
+        this.HasAttachments = value;
         valueChanged("HasAttachments", value);
 
     }
-            
+
     private String Subject;
-     
+
     /**
     * Gets the Subject.
     *
     * @return the String
     */
     public String getSubject() {
-        return this.Subject; 
+        return this.Subject;
     }
 
     /**
@@ -196,21 +200,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setSubject(String value) { 
-        this.Subject = value; 
+    public void setSubject(String value) {
+        this.Subject = value;
         valueChanged("Subject", value);
 
     }
-            
+
     private ItemBody Body;
-     
+
     /**
     * Gets the Body.
     *
     * @return the ItemBody
     */
     public ItemBody getBody() {
-        return this.Body; 
+        return this.Body;
     }
 
     /**
@@ -218,21 +222,21 @@ public class Event extends Item {
     *
     * @param value the ItemBody
     */
-    public void setBody(ItemBody value) { 
-        this.Body = value; 
+    public void setBody(ItemBody value) {
+        this.Body = value;
         valueChanged("Body", value);
 
     }
-            
+
     private String BodyPreview;
-     
+
     /**
     * Gets the Body Preview.
     *
     * @return the String
     */
     public String getBodyPreview() {
-        return this.BodyPreview; 
+        return this.BodyPreview;
     }
 
     /**
@@ -240,21 +244,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setBodyPreview(String value) { 
-        this.BodyPreview = value; 
+    public void setBodyPreview(String value) {
+        this.BodyPreview = value;
         valueChanged("BodyPreview", value);
 
     }
-            
+
     private Importance Importance;
-     
+
     /**
     * Gets the Importance.
     *
     * @return the Importance
     */
     public Importance getImportance() {
-        return this.Importance; 
+        return this.Importance;
     }
 
     /**
@@ -262,21 +266,21 @@ public class Event extends Item {
     *
     * @param value the Importance
     */
-    public void setImportance(Importance value) { 
-        this.Importance = value; 
+    public void setImportance(Importance value) {
+        this.Importance = value;
         valueChanged("Importance", value);
 
     }
-            
+
     private Sensitivity Sensitivity;
-     
+
     /**
     * Gets the Sensitivity.
     *
     * @return the Sensitivity
     */
     public Sensitivity getSensitivity() {
-        return this.Sensitivity; 
+        return this.Sensitivity;
     }
 
     /**
@@ -284,21 +288,21 @@ public class Event extends Item {
     *
     * @param value the Sensitivity
     */
-    public void setSensitivity(Sensitivity value) { 
-        this.Sensitivity = value; 
+    public void setSensitivity(Sensitivity value) {
+        this.Sensitivity = value;
         valueChanged("Sensitivity", value);
 
     }
-            
+
     private DateTimeTimeZone Start;
-     
+
     /**
     * Gets the Start.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getStart() {
-        return this.Start; 
+        return this.Start;
     }
 
     /**
@@ -306,21 +310,21 @@ public class Event extends Item {
     *
     * @param value the DateTimeTimeZone
     */
-    public void setStart(DateTimeTimeZone value) { 
-        this.Start = value; 
+    public void setStart(DateTimeTimeZone value) {
+        this.Start = value;
         valueChanged("Start", value);
 
     }
-            
+
     private java.util.Calendar OriginalStart;
-     
+
     /**
     * Gets the Original Start.
     *
     * @return the java.util.Calendar
     */
     public java.util.Calendar getOriginalStart() {
-        return this.OriginalStart; 
+        return this.OriginalStart;
     }
 
     /**
@@ -328,21 +332,21 @@ public class Event extends Item {
     *
     * @param value the java.util.Calendar
     */
-    public void setOriginalStart(java.util.Calendar value) { 
-        this.OriginalStart = value; 
+    public void setOriginalStart(java.util.Calendar value) {
+        this.OriginalStart = value;
         valueChanged("OriginalStart", value);
 
     }
-            
+
     private DateTimeTimeZone End;
-     
+
     /**
     * Gets the End.
     *
     * @return the DateTimeTimeZone
     */
     public DateTimeTimeZone getEnd() {
-        return this.End; 
+        return this.End;
     }
 
     /**
@@ -350,21 +354,21 @@ public class Event extends Item {
     *
     * @param value the DateTimeTimeZone
     */
-    public void setEnd(DateTimeTimeZone value) { 
-        this.End = value; 
+    public void setEnd(DateTimeTimeZone value) {
+        this.End = value;
         valueChanged("End", value);
 
     }
-            
+
     private Location Location;
-     
+
     /**
     * Gets the Location.
     *
     * @return the Location
     */
     public Location getLocation() {
-        return this.Location; 
+        return this.Location;
     }
 
     /**
@@ -372,21 +376,21 @@ public class Event extends Item {
     *
     * @param value the Location
     */
-    public void setLocation(Location value) { 
-        this.Location = value; 
+    public void setLocation(Location value) {
+        this.Location = value;
         valueChanged("Location", value);
 
     }
-            
+
     private Boolean IsAllDay;
-     
+
     /**
     * Gets the Is All Day.
     *
     * @return the Boolean
     */
     public Boolean getIsAllDay() {
-        return this.IsAllDay; 
+        return this.IsAllDay;
     }
 
     /**
@@ -394,21 +398,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setIsAllDay(Boolean value) { 
-        this.IsAllDay = value; 
+    public void setIsAllDay(Boolean value) {
+        this.IsAllDay = value;
         valueChanged("IsAllDay", value);
 
     }
-            
+
     private Boolean IsCancelled;
-     
+
     /**
     * Gets the Is Cancelled.
     *
     * @return the Boolean
     */
     public Boolean getIsCancelled() {
-        return this.IsCancelled; 
+        return this.IsCancelled;
     }
 
     /**
@@ -416,21 +420,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setIsCancelled(Boolean value) { 
-        this.IsCancelled = value; 
+    public void setIsCancelled(Boolean value) {
+        this.IsCancelled = value;
         valueChanged("IsCancelled", value);
 
     }
-            
+
     private Boolean IsOrganizer;
-     
+
     /**
     * Gets the Is Organizer.
     *
     * @return the Boolean
     */
     public Boolean getIsOrganizer() {
-        return this.IsOrganizer; 
+        return this.IsOrganizer;
     }
 
     /**
@@ -438,21 +442,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setIsOrganizer(Boolean value) { 
-        this.IsOrganizer = value; 
+    public void setIsOrganizer(Boolean value) {
+        this.IsOrganizer = value;
         valueChanged("IsOrganizer", value);
 
     }
-            
+
     private PatternedRecurrence Recurrence;
-     
+
     /**
     * Gets the Recurrence.
     *
     * @return the PatternedRecurrence
     */
     public PatternedRecurrence getRecurrence() {
-        return this.Recurrence; 
+        return this.Recurrence;
     }
 
     /**
@@ -460,21 +464,21 @@ public class Event extends Item {
     *
     * @param value the PatternedRecurrence
     */
-    public void setRecurrence(PatternedRecurrence value) { 
-        this.Recurrence = value; 
+    public void setRecurrence(PatternedRecurrence value) {
+        this.Recurrence = value;
         valueChanged("Recurrence", value);
 
     }
-            
+
     private Boolean ResponseRequested;
-     
+
     /**
     * Gets the Response Requested.
     *
     * @return the Boolean
     */
     public Boolean getResponseRequested() {
-        return this.ResponseRequested; 
+        return this.ResponseRequested;
     }
 
     /**
@@ -482,21 +486,21 @@ public class Event extends Item {
     *
     * @param value the Boolean
     */
-    public void setResponseRequested(Boolean value) { 
-        this.ResponseRequested = value; 
+    public void setResponseRequested(Boolean value) {
+        this.ResponseRequested = value;
         valueChanged("ResponseRequested", value);
 
     }
-            
+
     private String SeriesMasterId;
-     
+
     /**
     * Gets the Series Master Id.
     *
     * @return the String
     */
     public String getSeriesMasterId() {
-        return this.SeriesMasterId; 
+        return this.SeriesMasterId;
     }
 
     /**
@@ -504,21 +508,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setSeriesMasterId(String value) { 
-        this.SeriesMasterId = value; 
+    public void setSeriesMasterId(String value) {
+        this.SeriesMasterId = value;
         valueChanged("SeriesMasterId", value);
 
     }
-            
+
     private FreeBusyStatus ShowAs;
-     
+
     /**
     * Gets the Show As.
     *
     * @return the FreeBusyStatus
     */
     public FreeBusyStatus getShowAs() {
-        return this.ShowAs; 
+        return this.ShowAs;
     }
 
     /**
@@ -526,21 +530,21 @@ public class Event extends Item {
     *
     * @param value the FreeBusyStatus
     */
-    public void setShowAs(FreeBusyStatus value) { 
-        this.ShowAs = value; 
+    public void setShowAs(FreeBusyStatus value) {
+        this.ShowAs = value;
         valueChanged("ShowAs", value);
 
     }
-            
+
     private EventType Type;
-     
+
     /**
     * Gets the Type.
     *
     * @return the EventType
     */
     public EventType getType() {
-        return this.Type; 
+        return this.Type;
     }
 
     /**
@@ -548,24 +552,24 @@ public class Event extends Item {
     *
     * @param value the EventType
     */
-    public void setType(EventType value) { 
-        this.Type = value; 
+    public void setType(EventType value) {
+        this.Type = value;
         valueChanged("Type", value);
 
     }
-    
-        
+
+
     private java.util.List<Attendee> Attendees = null;
-    
-    
-     
+
+
+
     /**
     * Gets the Attendees.
     *
     * @return the java.util.List<Attendee>
     */
     public java.util.List<Attendee> getAttendees() {
-        return this.Attendees; 
+        return this.Attendees;
     }
 
     /**
@@ -573,21 +577,21 @@ public class Event extends Item {
     *
     * @param value the java.util.List<Attendee>
     */
-    public void setAttendees(java.util.List<Attendee> value) { 
-        this.Attendees = value; 
+    public void setAttendees(java.util.List<Attendee> value) {
+        this.Attendees = value;
         valueChanged("Attendees", value);
 
     }
-            
+
     private Recipient Organizer;
-     
+
     /**
     * Gets the Organizer.
     *
     * @return the Recipient
     */
     public Recipient getOrganizer() {
-        return this.Organizer; 
+        return this.Organizer;
     }
 
     /**
@@ -595,21 +599,21 @@ public class Event extends Item {
     *
     * @param value the Recipient
     */
-    public void setOrganizer(Recipient value) { 
-        this.Organizer = value; 
+    public void setOrganizer(Recipient value) {
+        this.Organizer = value;
         valueChanged("Organizer", value);
 
     }
-            
+
     private String WebLink;
-     
+
     /**
     * Gets the Web Link.
     *
     * @return the String
     */
     public String getWebLink() {
-        return this.WebLink; 
+        return this.WebLink;
     }
 
     /**
@@ -617,21 +621,21 @@ public class Event extends Item {
     *
     * @param value the String
     */
-    public void setWebLink(String value) { 
-        this.WebLink = value; 
+    public void setWebLink(String value) {
+        this.WebLink = value;
         valueChanged("WebLink", value);
 
     }
-            
+
     private Calendar Calendar;
-     
+
     /**
     * Gets the Calendar.
     *
     * @return the Calendar
     */
     public Calendar getCalendar() {
-        return this.Calendar; 
+        return this.Calendar;
     }
 
     /**
@@ -639,24 +643,24 @@ public class Event extends Item {
     *
     * @param value the Calendar
     */
-    public void setCalendar(Calendar value) { 
-        this.Calendar = value; 
+    public void setCalendar(Calendar value) {
+        this.Calendar = value;
         valueChanged("Calendar", value);
 
     }
-    
-        
+
+
     private java.util.List<Event> Instances = null;
-    
-    
-     
+
+
+
     /**
     * Gets the Instances.
     *
     * @return the java.util.List<Event>
     */
     public java.util.List<Event> getInstances() {
-        return this.Instances; 
+        return this.Instances;
     }
 
     /**
@@ -664,24 +668,24 @@ public class Event extends Item {
     *
     * @param value the java.util.List<Event>
     */
-    public void setInstances(java.util.List<Event> value) { 
-        this.Instances = value; 
+    public void setInstances(java.util.List<Event> value) {
+        this.Instances = value;
         valueChanged("Instances", value);
 
     }
-    
-        
+
+
     private java.util.List<Attachment> Attachments = null;
-    
-    
-     
+
+
+
     /**
     * Gets the Attachments.
     *
     * @return the java.util.List<Attachment>
     */
     public java.util.List<Attachment> getAttachments() {
-        return this.Attachments; 
+        return this.Attachments;
     }
 
     /**
@@ -689,10 +693,26 @@ public class Event extends Item {
     *
     * @param value the java.util.List<Attachment>
     */
-    public void setAttachments(java.util.List<Attachment> value) { 
-        this.Attachments = value; 
+    public void setAttachments(java.util.List<Attachment> value) {
+        this.Attachments = value;
         valueChanged("Attachments", value);
 
+    }
+
+    public String getReason() {
+        return reason;
+    }
+
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
+
+    public Object getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Object deleted) {
+        this.deleted = deleted;
     }
 }
 
