@@ -23,7 +23,7 @@ dependencies {
 //        exclude group: 'com.microsoft.aad'
 //        exclude module: 'msa-auth'
 //    }
-    compile('com.github.Apisov:orc-android:86519a5') {
+    compile('com.github.Apisov:orc-for-android:86519a5a82') {
         exclude group: 'com.microsoft.aad'
         exclude module: 'msa-auth'
     }
