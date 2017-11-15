@@ -1,5 +1,11 @@
 apply plugin: 'com.android.library'
 
+buildscript {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
