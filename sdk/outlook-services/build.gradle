@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
 
-buildscript {
+allprojects {
     repositories {
-        maven { url "https://jitpack.io" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
